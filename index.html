@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title> Amigo Secreto </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Amigo</h1>
-<h1>Secreto</h1>
+
+<div>
+    <label for="textField" ></label><input id = "textField" type="text" placeholder="Digite o nome de seus amigos"/>
+    <div id="container">
+
+        <button id ="Botao" class = "Botao" onclick="Sortear()"> Sortear <span id = "Detalhe2"> </span></button>
+
+
+    </div>
+
+<!--    <span id="Detalhe">  </span>-->
+    <span id="AdicionarNomes">Adicionar</span>
+
+</div>
+
+<div class = "imagem-amigos"></div>
+<div class="container-principal">
+
+
+
+</div>
+
+<div class="titulos">
+    <h1 class="amigo">Amigo</h1>
+    <h1 class="secreto">Secreto</h1>
+</div>
+<div class="Pai">
+    <div id="teste">
+        <h2 id="SeusAmigos"   > Seus Amigos: </h2>
+
+        <p id="texto"></p>
+    </div>
+    <div id="#teste2">
+        <h2 id  = "Duplas">Duplas:</h2>
+    </div>
+</div>
+
+
+
+<script src ="app.js"></script>
 </body>
 </html>
