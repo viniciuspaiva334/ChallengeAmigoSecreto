@@ -146,18 +146,18 @@ input[type=text]:focus{border: 2px solid #555; }
 
 #Botao:hover{
  
-    transition-delay: 0.6s;
+    transition-delay: 0.2s;
     border-right: #ccc 4px solid;
     border-bottom: #ccc 4px solid;
-    width: 12em;
-    height: 7vh;
+    width: 11em;
+    height: 6vh;
     cursor: pointer;
 }
 
 
 .Pai{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
