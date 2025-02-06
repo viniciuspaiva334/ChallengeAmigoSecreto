@@ -60,10 +60,12 @@ function Sortear(){
        }
    }
     document.getElementById("novoJogo").disabled = false;
+    document.getElementById("Botao").disabled = true;
  }
  //
   function novoJogo(){
 location.reload();
+      document.getElementById("Botao").disabled = false;
 }
 //
 // document.addEventListener('',(event)=>{
