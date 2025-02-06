@@ -57,9 +57,10 @@ function Sortear(){
 
            numerosSorteados.push(pessoa);
            document.getElementById("Botao").disabled = true;
+           document.getElementById("novoJogo").disabled = false;
        }
    }
-    document.getElementById("novoJogo").disabled = false;
+
 
  }
 
