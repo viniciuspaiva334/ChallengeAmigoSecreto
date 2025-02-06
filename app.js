@@ -56,19 +56,14 @@ function Sortear(){
 
 
            numerosSorteados.push(pessoa);
-
+           document.getElementById("Botao").disabled = true;
        }
    }
     document.getElementById("novoJogo").disabled = false;
-    document.getElementById("Botao").disabled = true;
+
  }
- //
+
   function novoJogo(){
 location.reload();
       document.getElementById("Botao").disabled = false;
 }
-//
-// document.addEventListener('',(event)=>{
-//     alert("enter foi pressionado");
-//
-// });
