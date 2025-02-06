@@ -42,26 +42,31 @@ function getNomes(){
 
 function Sortear(){
     let pessoa = Math.floor(Math.random()*nomes.length);
+   if(nomes.length===0){
+       alert("Por favor, adicione nomes a lista");
+   }else {
+       if (numerosSorteados.includes(pessoa)) {
 
-    if (numerosSorteados.includes(pessoa)){
+           let pessoa = Math.floor(Math.random() * nomes.length);
 
-        let pessoa = Math.floor(Math.random()*nomes.length);
-
-    }else {
-        let  removeNomes = document.getElementById('ListaAmigos').innerHTML = '';
-        let nomeSorteado = document.getElementById('SeusAmigos');
-        nomeSorteado.innerHTML = "Seu amigo secreto é:" +nomes[pessoa];
+       } else {
+           let removeNomes = document.getElementById('ListaAmigos').innerHTML = '';
+           let nomeSorteado = document.getElementById('SeusAmigos');
+           nomeSorteado.innerHTML = "Seu amigo secreto é:" + nomes[pessoa];
 
 
-        numerosSorteados.push(pessoa);
+           numerosSorteados.push(pessoa);
 
-    }
-// se o botao d333e sortear for apertado ele desaparece logo em seguida e o botao de novo jogo appears
-//     disappearButton.style.visibility = "hidden";
-
+       }
+   }
+    document.getElementById("novoJogo").disabled = false;
  }
  //
- // function novoJogo(){
- //    disappearButton.style.visibility='visible';
- //
- // }
+  function novoJogo(){
+location.reload();
+}
+//
+// document.addEventListener('',(event)=>{
+//     alert("enter foi pressionado");
+//
+// });
